@@ -1,3 +1,12 @@
+constructor:
+it will not have any return type
+Name if the constructor should same as the class name
+it will be executed whenever the object is initialized(even if it is explicitly invoked)
+constructor without any parameters - Default constructor
+with parameters - parameterized constructor(should be invoked explicitly to invoke parameterized constructor)
+
+
+
 class Human
 {
 	private int age;
