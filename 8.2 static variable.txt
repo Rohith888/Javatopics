@@ -1,3 +1,9 @@
+Static variable: static String name;
+it will be shared by all the objects and will have same value across all the objects created.
+if the value is changed then it would affects all the objects.
+it will be a class member not an object member. 
+
+
 class Mobile{
 	String brand;
 	int price;
