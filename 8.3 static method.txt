@@ -1,3 +1,11 @@
+Static method: public static void show(){}
+you can call dirctly using class name
+you can only use static variable inside the static method. but if you have an object reference you can use the non static object variables inside the static methods.
+the main method is also a static method, that is why it is executed whenever the class is initiated for the first time.
+if main doesn't have a static key word then we should create an object for our class and then execute the main method which is not possible.
+static methods doesn't need an object to initailze it instead them can be executed with the class name itself
+
+
 class Mobile{
 	String brand;
 	int price;
