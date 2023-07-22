@@ -1,3 +1,13 @@
+This and Super:
+whenever an object is initialized, it will first execute the super class default constructor and then subclass default constructor.
+whenever an object is initialized with parmeter, then it will call the super class default constructor and then subclass parameterized constructor.
+if you want to invoke parameterized constructor in super class then add parameter to super(int a)
+
+**** every class in java extends object class
+
+to execute both default constructor and parameterized constructor
+use this(); in parameterized it will execute the default constructor
+
 /**
 // super()
 class A
