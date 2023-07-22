@@ -2,7 +2,7 @@ Encapsulation:
 private variables can only be accessed inside the same class.
 private variables can only be accessed by the public methods outside the class.
 Encapsulation means binding data with methods
-encapsulating data with method
+encapsulating data with methods
 
 
 
