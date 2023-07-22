@@ -1,3 +1,14 @@
+static block: static { String name; }
+where we can initiailze static variable
+this will be executed only once when the class is loaded
+class loads(only once) --> then objects will be instantiated.
+
+you can initailze a static variable inside a constructor.(not a better practice)
+better, initailze static varibles in static block/out side the constructor as it don't needs to be initialised everytime when the constructor is executed.
+
+to load the class without creating the object: using sytem class loader
+Class.forName("<enter class name>")
+
 class Mobile{
 	String brand;
 	int price;
