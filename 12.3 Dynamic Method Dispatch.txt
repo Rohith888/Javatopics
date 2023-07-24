@@ -1,3 +1,50 @@
+class A{
+
+}
+class B extends A{
+
+}
+A ob1 = new A(); possible
+B ob2 = new B(); possible
+
+A ob3 = new B(); possible
+B ob4 = new A(); not possible
+
+class Computer {
+    public void show() {
+        System.out.println("in show Computer");
+    }
+}
+
+class Laptop extends Computer {
+    public void show() {
+        System.out.println("in show Laptop");
+    }
+}
+
+public class MethodOverriding {
+    public static void main(String a[]) {
+        Computer ob1 = new Computer();
+        ob1.show(); // prints in show Computer
+
+        Computer ob2 = new Laptop();
+        ob2.show(); // prints in show Laptop
+
+        Laptop ob3 = new Laptop();
+        ob3.show(); // prints in show Laptop
+
+    }
+}
+
+
+the refernce type should either be the same as the object type or it's parent.
+the referece type is of child and object is parent is not possible
+
+whatever the reference type is: incase of method overriding, it is determined by the type of object and method inside it will be executed
+
+
+
+
 // class Computer
 // {
 //	
