@@ -1,3 +1,27 @@
+new Human() - new object creation
+Human obj - reference variable
+
+Inheritance:
+is - 
+has - 
+
+Parent - child
+super - sub
+base - derived
+
+Single level Inheritance:
+A <- B
+
+Multilevel Inheritance:
+A <- B <- C
+
+Multiple Inheritance: doesn't work in Java(if the same method is present in both the parents then there will be ambiguity)
+A <-|
+    |<- C
+B <-|
+
+
+
 Inheritance:-
 
 is, has
