@@ -15,7 +15,15 @@ A <- B
 Multilevel Inheritance:
 A <- B <- C
 
+Hierarchical Inheritance:
+
+   |<-B
+A<-|
+   |<-C
+
 Multiple Inheritance: doesn't work in Java(if the same method is present in both the parents then there will be ambiguity)
+can be implemented using interface.
+
 A <-|
     |<- C
 B <-|
