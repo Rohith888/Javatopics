@@ -1,3 +1,38 @@
+Abstract:
+Abstract keyword is used to declare a method(without having any implementation for it)
+Class must be an abstract class if there any abstract method in it.
+an abstract class can/cannot have abstract methods in it(not mandatory to have abstract method)
+
+you cannot create an object for an abstract class but you can have a reference for abstract class with object of drived implemented class.
+you can create an object of drived class of an abstract class where all the methods are implemented.
+the abstract method should definitly be implemented in the derived class(if not implemented then that class should become an abstract class)
+
+
+abstract class Car {
+    public abstract void drive();
+
+    public void playMusic() {
+        System.out.println("play music");
+    }
+
+}
+
+class Ford extends Car {
+    public void drive() {
+        System.out.println("Driving");
+    }
+}
+
+public class Abstract {
+    public static void main(String a[]) {
+        Car obj = new Ford();
+        obj.drive();
+        obj.playMusic();
+    }
+}
+
+
+
 abstract class Car
 {
 //	public void drive()
