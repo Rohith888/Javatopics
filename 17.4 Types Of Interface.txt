@@ -1,3 +1,14 @@
+Types of Interfaces: Normal, Functional/SAM, Marker
+
+Normal Interface: 
+if the Interface has two or more methods
+
+Functional Interface or Single Abstract Method(SAM):
+if the Interface has only one method
+
+Marker Interface:
+if the Interface has no method.
+
 Types of Interface:-
 1. Normal interface
 	- an interface having two or more methods
