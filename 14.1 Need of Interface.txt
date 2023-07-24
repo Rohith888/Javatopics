@@ -1,3 +1,60 @@
+Interface:
+Interface is a class where by default all the methods are public abstract
+all the variables declared inside the interface are final and static should be initialized when declared
+these varibles can be directly access using class
+
+you can have multiple inheritance using interface
+interfaces can be inherited
+
+interface A {
+    int age = 22; // final and static
+    String area = "Hyd"; // final and static
+
+    void show();
+
+    void config();
+}
+
+interface X {
+    void run();
+
+    void show();
+}
+
+interface Y extends X {
+
+}
+
+class B implements A, Y {
+    public void show() {
+        System.out.println("show B");
+    }
+    public void run() {
+        System.out.println("run B");
+    }
+    public void config() {
+        System.out.println("config B");
+    }
+}
+
+public class Impinterface {
+    public static void main(String a[]) {
+        A obj;
+        obj = new B();
+        obj.show();
+        obj.config();
+
+        // obj.run();
+        B obj1 = new B();
+        obj1.run();
+
+        X obj2 = new B();
+        obj2.run();
+    }
+}
+
+
+
 /*
 
 abstract class Computer
