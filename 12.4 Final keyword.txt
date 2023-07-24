@@ -1,3 +1,11 @@
+Final variable: the value cannot be changed.
+
+Final class: you cannot extend that class if it is declare as final(this class cannot be inherited) 
+
+Final method: it cannot be overridded.
+
+
+
 //final - variable, method, class
 
 //final class Calc
