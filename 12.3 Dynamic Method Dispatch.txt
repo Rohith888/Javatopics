@@ -26,23 +26,31 @@ public class MethodOverriding {
     public static void main(String a[]) {
         Computer ob1 = new Computer();
         ob1.show(); // prints in show Computer
+        ob1.computerHide(); // prints in show Computer
+        //ob1.laptopHide(); // not possible because computer doesn't know about laptop
 
         Computer ob2 = new Laptop();
         ob2.show(); // prints in show Laptop
+        ob2.computerHide(); // prints in hide Computer
+        //ob2.laptopHide(); // not possible because computer doesn't know about laptop
 
         Laptop ob3 = new Laptop();
         ob3.show(); // prints in show Laptop
+        ob3.computerHide(); // prints in hide Computer
+        ob3.laptopHide(); // prints in hide laptop
 
     }
 }
 
-
 the refernce type should either be the same as the object type or it's parent.
 the referece type is of child and object is parent is not possible
 
+In case of method overriding(having same methods in the parent and child)
 whatever the reference type is: incase of method overriding, it is determined by the type of object and method inside it will be executed
 
-
+In case of different methods:
+parent refernce type will not about the methods in the parent 
+child reference tyoe will not about the methods of both parent and child
 
 
 // class Computer
