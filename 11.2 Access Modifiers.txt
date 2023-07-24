@@ -1,3 +1,41 @@
+Access modifier:
+packages: means a folder structure
+
+public: if a variable or method is public then it can be accessed from anywhere(outside the package)
+
+private: it can only be used in the same class itself. you can't access the private variable outside the class even in the same package.
+
+if you don't specify the access modifier to a variable/method then it will be Default.
+
+Default: it can be accessed in the same package.
+
+Protected: can be accessed in the same class, same package, and other package but it should be a sub-class.
+
+
+
+make your 
+class public
+instance variables private
+method public(mostly) but if there is a method which should be used only subclass of the packages protected 
+
+                      Private    Protected    Public      Default
+
+same class              Yes         Yes         Yes         Yes    
+
+same package            No          Yes         Yes         Yes
+subclass
+
+same package            No          Yes         Yes         Yes
+non subclass
+
+different package       No          Yes         Yes         No
+subclass
+
+different package       No          No          Yes         No
+non-subclass
+
+
+
 class Launch
 {
 	A obj=new A();
