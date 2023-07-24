@@ -1,3 +1,13 @@
+Polymorphism: many + behaviour
+
+compile time(early binding): if you can define the behaviour during compile time
+method overloading
+
+
+run time(late binding): if you can define the behaviour during run time
+method overriding
+
+
 Polymorphism:
 - Many behaviour ( same object or reference has differnet behaviours)
 
