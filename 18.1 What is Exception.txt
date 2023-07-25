@@ -3,6 +3,57 @@ Types of error:-
 2. Runtime error -> Exception handling
 3. Logical error
 
+Exceptions:
+
+Errors:
+Compile-time error: errors which prevent the code from running because of an incorrect syntax
+Runtime error: ex: when the user enters an invalid data or data which is not relevant.
+Logical error: A logic error is when your program compiles and executes, but does the wrong thing or returns an incorrect result or no output when it should be returning an output.
+
+
+class CustomException extends RuntimeException {
+    public CustomException(String str){
+
+    }
+}
+
+public class TypesOfException {
+    public static void main(String a[]) {
+        int i = 18;
+        int j = 0;
+        String st = null;
+        int[] nums = new int[5];
+        try {
+            j = 18 / i;
+            st.length();
+            System.out.println(nums[5]);
+            if (j == 0) {
+                throw new ArithmeticException();
+            }
+            if (j == 1) {
+                throw new CustomException("j value is 18");
+            }
+        }
+        catch(CustomException e){
+            System.out.println("output" + e);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("cannot divide by zero.");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("array size is" + nums.length);
+        }
+        catch (NullPointerException e) {
+            System.out.println("string is null");
+        }
+        catch (Exception e) {
+            System.out.println("something went wrong");
+        }
+        System.out.println(j);
+        System.out.println("Bye");
+    }
+}
+
 
 public class Demo {
     public static void main(String[] args) {
