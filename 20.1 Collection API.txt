@@ -2,7 +2,7 @@ Collection<Integer> obj1 = new ArrayList<>();
 List<Integer> obj2 = new ArrayList<>();
 Set<Integer> obj3 = new HashSet<>();
 Map<String, Integer> obj4 = new HashMap<>();
-
+List<Integer> ob = Arrays.asList(2,3,4,5);
 
 Collection API -> concept
 Collection -> Interface
