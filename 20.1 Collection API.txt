@@ -1,3 +1,9 @@
+Collection<Integer> obj1 = new ArrayList<>();
+List<Integer> obj2 = new ArrayList<>();
+Set<Integer> obj3 = new HashSet<>();
+Map<String, Integer> obj4 = new HashMap<>();
+
+
 Collection API -> concept
 Collection -> Interface
 Collections -> classe with multiple methods
